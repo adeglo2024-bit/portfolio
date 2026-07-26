@@ -1,201 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        .glory {
-            background-color: lightblue;
-            display: flex;
-            justify-content:space-around ;
-            align-items: center;
-            line-height: 6px;
-            padding: 100px 20px;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
 
+<style>
 
-            
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
-                }
+body{
+    background:white;
+}
 
-        .bigger{
-            margin-left: 120px; 
-            background-color: blue;
-            color: whitesmoke;
-            border-radius: 3px;
-            border: none;
-            font-size: 10px;
-            height: 25px;
-            width: 90px;
-            font-weight: bold;
-            margin-top: 10px;
-            background-color: blue;
-            cursor: pointer;
-            transition: opacity 0.15s, background-color 0.15s, color 1s;
+/* Navigation */
 
-        
-        }
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 30px;
+}
 
-        .bigger:hover{
-            background-color: black;
-        }
-        .bigger:active{
-            opacity: 0.7;
-        }
+.logo{
+    font-size:18px;
+    font-weight:bold;
+}
 
-        .big{
-            font-weight: bold;
-            font-size: 30px;
-            font-family: arial;
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
 
-        }
+nav ul li{
+    cursor:pointer;
+}
 
-        .bigs{
-            font-size: 13px;
-            color: grey;
-        }
-        .you{
-            background-color: whitesmoke;
-            border-style: solid;
-            border-color: white;
-            display: inline-block;
-            justify-content: space-around;
-            width: 170px;
-            text-align: center;
+/* Hero Section */
 
-            
-            
+.glory{
+    background:lightblue;
+    text-align:center;
+    padding:100px 20px;
+}
 
-            
-            
-        }
-        
+.big{
+    font-size:35px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
 
-            
-        
-            
-            
-            
-            
-        
+.bigs{
+    color:gray;
+    font-size:15px;
+    margin-bottom:20px;
+}
 
+.bigger{
+    background:blue;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:.3s;
+}
 
-        
-        
+.bigger:hover{
+    background:black;
+}
 
-        
+/* Services */
 
-            
+.services-title{
+    text-align:center;
+    margin:30px 0;
+    font-size:22px;
+    font-weight:bold;
+}
 
-        
-    </style>
+.services{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+.you{
+    background:whitesmoke;
+    width:220px;
+    padding:20px;
+    text-align:center;
+    border-radius:8px;
+}
+
+.you img{
+    width:40px;
+    margin-bottom:15px;
+}
+
+.you h3{
+    margin-bottom:10px;
+}
+
+.you p{
+    color:gray;
+    font-size:14px;
+}
+
+/* Footer */
+
+footer{
+    background:whitesmoke;
+    text-align:center;
+    padding:18px;
+    margin-top:50px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.big{
+    font-size:28px;
+}
+
+.you{
+    width:90%;
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
 
-   
-   
-    <div class="marv">
+<nav>
 
-       <div style="
-       display: flex;
-       justify-content: space-between;
-       font-size: 12px;
-       align-items: center;
-       
-       
-       ">
-        <p style="margin-right: 850px;
-        font-weight: bold;
-        font-size: 14px;
-        margin-left: 25px;"> My Website</p>
-        
-        <p> Home</p>
-        <p onclick="location.href= 'about.html'"> About</p>
-       <p> Services</p>
-        <p> Contact</p>
-        </div>
-       </div>
-        
-        
-       
-
- 
-    
-
-
-    <div class="glory">
-    
- 
-   <div style="margin-top: 30px;">
-    
-    <p class="big"> Welcome To My Website</p>
-    <p class="bigs"> This is a simple website for begineers to practice HTML and CSS. </p>
-    <button class="bigger"> Learn More</button>
-
-   </div> 
-
-    </div>
-    <p style="
-    font-weight: bold;
-    text-align: center;
-    margin-top: 15px;
-    margin-right: 30px;
-    font-size: 18px;"> Our Services</p>
-    
-    <div style="justify-content: space-around;
-    
-    margin-left: 390px;"> 
-    <div class="you">
-    <img  style=" height: 30px; margin-top: 20px;  "     src="thumbnails/thumbnail3.jpeg" >
-    <p style=" font-weight: bold; margin-bottom: 5px;"> Web Design</p>
-    <p style="font-size: 12px; margin-top: 0px; margin-bottom: 0; " >  We create beautiful and </p>
-    <p style="font-size: 12px;"> responsive websites</p>
-    </div>
-    <div class="you">
-    <img  style=" height: 30px; margin-top: 20px;"    src="thumbnails/thumbnail3.jpeg" >
-    <p style=" font-weight: bold;margin-bottom: 5px;"> Web Development</p>
-    <p style="font-size: 12px; margin-top: 0px; margin-bottom: 0;">  We build fast and modern </p>
-    <p style="font-size: 12px;"> websites with clean mode</p>
-    </div>
-    <div class="you">
-    <img  style=" height: 30px; margin-top: 20px;"    src="thumbnails/thumbnail3.jpeg" >
-    <p style=" font-weight: bold; margin-bottom: 5px;"> Marketing</p>
-    <p style="font-size: 12px; margin-top: 0px; margin-bottom: 0;"> We help you grow your brand</p>
-    <p style="font-size: 12px;"> and reach more people</p>
-    </div>
+<div class="logo">
+My Website
 </div>
-    
 
+<ul>
+<li>Home</li>
+<li onclick="location.href='about.html'">About</li>
+<li>Services</li>
+<li>Contact</li>
+</ul>
 
+</nav>
 
+<section class="glory">
 
+<h1 class="big">Welcome To My Website</h1>
 
+<p class="bigs">
+This is a simple website for beginners to practice HTML and CSS.
+</p>
 
-    <style>
-        
-    
-        p{
-            margin-top: 0;
-            
-            
-        }
-    </style>
-    <p style="display: flex;
-    background-color: whitesmoke;
-    text-align: center;
-    height: 40px;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 50px;
+<button class="bigger">Learn More</button>
 
-    
-    
-    
-    
-    "> 2026 My Website. All rights reserved.</p>
+</section>
 
-     
+<h2 class="services-title">Our Services</h2>
 
+<div class="services">
 
+<div class="you">
 
+<img src="thumbnails/thumbnail3.jpeg">
 
+<h3>Web Design</h3>
+
+<p>We create beautiful and responsive websites.</p>
+
+</div>
+
+<div class="you">
+
+<img src="thumbnails/thumbnail3.jpeg">
+
+<h3>Web Development</h3>
+
+<p>We build fast and modern websites with clean code.</p>
+
+</div>
+
+<div class="you">
+
+<img src="thumbnails/thumbnail3.jpeg">
+
+<h3>Marketing</h3>
+
+<p>We help you grow your brand and reach more people.</p>
+
+</div>
+
+</div>
+
+<footer>
+
+2026 My Website. All rights reserved.
+
+</footer>
 
 </body>
 </html>
