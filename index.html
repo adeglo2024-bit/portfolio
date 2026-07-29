@@ -24,7 +24,7 @@
         .link-head{
             display: flex;
             padding: 5px 25px;
-           max-width: 100%;
+            width: 100%;
             justify-content: space-between;
             align-items: center;
         }
@@ -198,16 +198,31 @@
         *, *::before, *::after{
                 box-sizing: border-box;
         }
+        
         @media (max-width: 768px){
+        
+            
+            
+                
+            .link-head{
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+                display: flex;
+            }
             .all-boxes{
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+            flex-direction: column;
+            width:100%;
+            
             }
             
-            .link-head{
+              
                 
-            }
+                
+                
             
         }
 
@@ -221,6 +236,10 @@
             text-align: center;
             margin-top: 80px;
             font-size: 18px;
+            width: 100%;
+            display: flex;
+        
+        
             "> 2026 My Website. All rights reserved</p>
 
 
