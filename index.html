@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+<body>
+
+
+    <section class="link-head">
+    <div class="website"> My Website</div>
+    <div class="links"> 
+     <a href="index.html" class="active"> Home</a>
+    <a href="about.html"> About</a>
+    <a href="#services"> Services</a>
+    <a href="#contact"> Contact</a>
+    </div>
+    </section>
+
+     <section class="overall-body"> 
+        
+     <h1 style="font-weight: bold; "> Welcome To My Site</h1>
+    <div class="paragraph-2">  <p > This is a simple website for begineers to practice HTML and CSS</p></div>
+       
+    <button class="Learn"> Learn More</button>
+     </section>
+
+     <div class="para">
+     <p>Our Services</p>
+     </div>
+
+    <section class="all-boxes">  
+    <a href="https://www.youtube.com/@cr7king-b3u" target="_blank" rel="noopener">
+        <div class="youtube-box"> 
+    <img  style=" height: 30px;  "     src="thumbnails/thumbnail3.jpeg" >
+      <div class="paragraph-box">
+    <p style="font-weight: bold;">  Web Design</p> 
+    <p style="font-size: 14px; margin-top: 3px; ">  We create beautiful and responsive websites</p>
+    </div>
+    </div>
+    </a>
+    <a href="https://www.youtube.com/@cr7king-b3u" target="_blank" rel="noopener">
+     
+    <div class="youtube-box">
+    <img  style=" height: 30px;  "     src="thumbnails/thumbnail3.jpeg" >
+     <div class="paragraph-box"> 
+    <p style="font-weight: bold;" >Web Development</p>
+    <p style="font-size: 14px; margin-top: 3px;">  We build fast and modern websites with clean mode</p>
+    </div>
+    </div>
+    </a>
+    
+
+    <a href="https://www.youtube.com/@cr7king-b3u" target="_blank" rel="noopener">
+    
+    
+    <div class="youtube-box">
+    <img  style=" height: 30px;  "     src="thumbnails/thumbnail3.jpeg" >
+     <div class="paragraph-box">
+    <p style="font-weight: bold;">  Marketing</p>
+    <p style="font-size: 14px; margin-top: 3px;">  We help you grow your brand and reach more people</p>
+    </div>
+    </div>
+    </a>
+
+    </section>
+
+    <p style="
+    background: blue;
+    color: white;
+            padding: 8px 20px 20px 20px ;
+            text-align: center;
+            margin-top: 60px;
+            font-size: 18px;
+            "> 2026 My Website. All rights reserved</p>
+
+     
+    
+
+
+
+    <style> 
+        .link-head{
+            display: flex;
+            padding: 5px 25px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .links{
+            display: flex;
+            gap: 27px;
+            
+
+        }
+        .website{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .links a{
+            text-decoration: none;
+            color: black;
+        }
+        .links a:hover{
+            color: blue;
+
+        }
+         
+
+        
+            .overall-body{
+                justify-content: center;
+                text-align: center;
+                background: lightblue;
+                padding: 80px 40px;
+                
+
+            }
+            
+            .Learn{
+                color: white;
+                background: blue;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                margin-top: 10px;
+            }
+            .Learn:hover{
+                background: black;
+                cursor: pointer;
+            }
+            .paragraph-2{
+                font-size: 14px;
+                margin-top: 5px;
+                
+            }
+            
+           @media (max-width: 768px){
+            
+            .link-head{
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+                display: flex;
+
+                
+            }
+            .overall-body h1{
+                font-size: 1.8rem;
+                white-space: nowrap;
+            }
+
+            .links{
+                margin-top: 5px;
+            }
+            .all-boxes{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+
+                flex-wrap: wrap;
+                gap: 10px;
+            
+            
+        }
+
+        .para{
+             margin-bottom: 10px;
+            
+        }
+
+            }
+
+
+            *, *::before, *::after{
+                box-sizing: border-box;
+                margin: 0;
+            }
+
+
+
+
+             
+            
+            body{
+            margin:0;
+            width: 100%;
+            overflow-x: hidden;
+            height: 100%;
+        }
+
+  .youtube-box{
+             
+            
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-top: 7px;
+            padding: 20px;
+            background:white;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                
+                
+                
+                
+            
+
+
+
+        
+        }
+
+
+        .para{
+            text-align: center;
+           margin-top: 20px;
+           font-size: 20px;
+        }
+
+        .youtube-box:hover {
+            background-color: #4fa9ff;
+            transition: 0.3s;
+             transform: translateY(-8px);
+             cursor: pointer;
+           
+               }
+        
+        
+             .all-boxes{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .paragraph-box{ 
+
+            max-width: 180px;
+            margin-top: 0;
+
+       
+        }
+        .all-boxes a{
+            text-decoration: none;
+            color: black;
+        }
+         
+        
+    </style>
+    
+
+
+</body>
+</html>
