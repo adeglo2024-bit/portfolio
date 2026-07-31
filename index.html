@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <form action="home.html">
+        
+         <div class="container">
+        <h1 style="text-align: center;">Welcome Back</h1>
+        <p style="color: gray;
+        text-align: center;
+        margin-top: 5px;
+        font-weight: lighter;
+        margin-bottom: 10px;"> Login to continue</p>
+
+
+   <p> Email</p>
+    <input type="text" placeholder="Enter Email"> 
+    <p> Password</p>
+    <input type="password" placeholder="Enter Password">  
+     <span class="eye"> </span>
+
+
+     <div class="check">
+
+    <p> <input type="checkbox" style="width: auto;
+    font-weight: lighter;"
+        > Remember me</p> 
+        
+    <a href="signup.html" style="color: blue;
+    text-decoration: none;"> Forgot password?</a>
+    
+    </div>
+     
+     <button type="submit" class="button">LOGIN</button>
+    <div class="end">
+     <p style=" color:gray; font-weight: lighter;"> Don't have an account?</p>
+     <a href="signup.html" style="color: blue;
+     text-decoration: none;
+     "> Sign up</a>
+     </div>
+     </div>
+     </form>
+
+     
+
+    <style> 
+
+     *, *::before, *::after{
+                box-sizing: border-box;
+                margin: 0;
+            }
+
+
+
+
+             
+            
+            body{
+            margin:0;
+            width: 100%;
+            overflow-x: hidden;
+            height: 100vh;
+            justify-content: center;
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container p{
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .container input{
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 7px;
+            
+        }
+
+        .button{
+    background-color: #007bff;
+     border-radius: 5px;
+     border:none;
+     width: 100%;
+     padding: 10px;
+     color: white;
+     margin-top: 10px;
+     cursor: pointer;
+        }
+
+        .button:hover{
+             background-color: black;
+        }
+
+        .container{
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            padding: 30px;
+            width: 100%;
+            margin-top: 5px;
+        
+
+        }
+
+        .end{
+            display: flex;
+            margin-top: 10px;
+            text-align: center;
+            gap: 5px;
+            align-items: center;
+            justify-content: center ;
+            font-weight: lighter;
+            
+        }
+
+        .check{
+             display: flex;
+            margin-top: 10px;
+            align-items: center;
+            gap: 30px;
+            
+            
+            justify-content: space-between;
+            font-size: 12px;
+
+        }
+        .end a:hover{
+            background-color: lightblue;
+        }
+
+        
+
+        
+
+
+    </style>
+    
+
+
+    
+
+
+
+
+
+
+</body>
+</html>
