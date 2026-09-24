@@ -1,20 +1,188 @@
-
-      <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaStore</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <nav class="navbar">
-        <h1 class="logo">Nova<span>Store</span></h1>
+    <header>
+        <nav>
+            <h2>NovaStore</h2>
 
-        <button class="menu-btn" id="menuBtn">☰</button>
+            <button id="menuBtn">☰</button>
+
+            <ul id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="cartBtn">Cart (<span id="cartCount">0</span>)</button></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="home" class="hero">
+        <h1>Welcome to NovaStore</h1>
+        <p>Shop quality products at affordable prices.</p>
+
+        <a href="#products">
+            <button>Shop Now</button>
+        </a>
+    </section>
+
+
+    <section id="products">
+
+        <h2>Our Products</h2>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search products..."
+        >
+
+        <div id="productContainer">
+
+            <div class="product-card">
+                <div class="product-image">📱</div>
+
+                <h3>Smartphone</h3>
+                <p>Modern smartphone for everyday use.</p>
+                <h4>₦150,000</h4>
+
+                <button
+                    class="add-cart"
+                    data-name="Smartphone"
+                    data-price="150000"
+                >
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-image">💻</div>
+
+                <h3>Laptop</h3>
+                <p>Powerful laptop for school and work.</p>
+                <h4>₦450,000</h4>
+
+                <button
+                    class="add-cart"
+                    data-name="Laptop"
+                    data-price="450000"
+                >
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-image">👕</div>
+
+                <h3>T-Shirt</h3>
+                <p>Comfortable everyday clothing.</p>
+                <h4>₦15,000</h4>
+
+                <button
+                    class="add-cart"
+                    data-name="T-Shirt"
+                    data-price="15000"
+                >
+                    Add to Cart
+                </button>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-image">🎧</div>
+
+                <h3>Headphones</h3>
+                <p>Wireless headphones for music.</p>
+                <h4>₦35,000</h4>
+
+                <button
+                    class="add-cart"
+                    data-name="Headphones"
+                    data-price="35000"
+                >
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="cart">
+
+        <h2>Your Cart</h2>
+
+        <div id="cartItems">
+            <p>Your cart is empty.</p>
+        </div>
+
+        <h3>
+            Total: ₦<span id="cartTotal">0</span>
+        </h3>
+
+        <button id="checkoutBtn">
+            Checkout
+        </button>
+
+    </section>
+
+
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your email"
+                required
+            >
+
+            <textarea
+                id="message"
+                placeholder="Your message"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 NovaStore</p>
+    </footer>
+
+
+    
+
+</body>
+</html>
        <style>
       * {
     margin: 0;
